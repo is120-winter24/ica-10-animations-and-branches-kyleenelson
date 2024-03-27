@@ -1,1 +1,25 @@
 /* TEAMMATE ONE EDITS THESE STYLES FOR YOUR TASKS */
+
+.logo {
+    width: ;
+    height: auto;
+    transform: scale(1.1) rotate(5deg);
+}
+
+.logo :hover {
+    transform: scale(1.1) rotate(5deg);
+    animation: rotate 3s infinite linear;
+}
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(200deg);
+    }
+}
