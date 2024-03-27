@@ -32,7 +32,6 @@
     /* background-position: bottom left; */
     background-size: 0% 3px;
     transition: background-size 500ms ease-in-out;
-
     /* extra styling   */
     font-weight: var(--fw-bold);
 }
@@ -40,6 +39,7 @@
 .box.box-2:hover {
     background-size: 100% 3px;
     color: inherit;
+    
 }
 
 /* box 3 */
