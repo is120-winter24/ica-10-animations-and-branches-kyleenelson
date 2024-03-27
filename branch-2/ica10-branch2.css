@@ -1,1 +1,23 @@
 /* TEAMMATE TWO EDITS THESE STYLES FOR YOUR TASKS */
+
+.box-5 {
+    text-align: center;
+    background-image: linear-gradient(#e66465, #9198e5);
+}
+
+.box-5:hover {
+    background-image: linear-gradient(green, blue);
+}
+
+.Rotating {
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
