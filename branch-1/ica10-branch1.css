@@ -1,1 +1,90 @@
 /* TEAMMATE ONE EDITS THESE STYLES FOR YOUR TASKS */
+
+.logo {
+    width: auto;
+    height: auto;
+    transform: scale(1.1) rotate(5deg);
+}
+
+.logo :hover {
+    transform: scale(1.1) rotate(5deg);
+    animation: rotate 3s infinite linear;
+}
+
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(200deg);
+    }
+}
+
+/* box 2 styling */
+.box.box-2 {
+    text-decoration: none;
+    background-image: linear-gradient(red, red);
+    background-repeat: no-repeat;
+    /* background-position: bottom left; */
+    background-size: 0% 3px;
+    transition: background-size 500ms ease-in-out;
+    /* extra styling   */
+    font-weight: var(--fw-bold);
+}
+
+.box.box-2:hover {
+    background-size: 100% 3px;
+    color: inherit;
+    
+}
+
+/* box 3 */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 50px auto;
+    width: 320px;
+    height: 320px;
+}
+
+.box.box-3 {
+    /* Targeting the element with both classes "box" and "box-3" */
+    background-color: blue;
+    animation: moveBox 5s infinite alternate;
+    /* Change the position of the square continuously */
+}
+
+@keyframes moveBox {
+    0% {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    25% {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    50% {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    75% {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    100% {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
